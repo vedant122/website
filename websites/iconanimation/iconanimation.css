@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height:100vh;
+    align-items: center;
+}
+
+ul{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    gap: 40px;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.1);
+}
+
+ul li .fa{
+    font-size: 6em;
+    -webkit-text-stroke: 2px var(--clr);
+    color: transparent;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    border-bottom: 4px solid var(--clr);
+    transition: 0.5s ease-in-out;
+    font-family: fontAwesome;
+    text-align: center;
+    line-height: 120px;
+    font-size: 6em;
+    color: var(--clr);
+}
+
+ul li:hover::before{
+    height: 100%;
+}
+
+ul li:nth-child(1):before{
+    content: '\f099';
+
+}
+
+ul li:nth-child(2):before{
+    content: '\f16d';
+
+}
+
+ul li:nth-child(3):before{
+    content: '\f232';
+
+}
+
+ul li:nth-child(4):before{
+    content: '\f16a';
+
+}
+
+ul li:nth-child(5):before{
+    content: '\f2c6';
+}
+
+ul li:nth-child(6)::before{
+    content: '\f230';
+}
+
+ul li:nth-child(7)::before{
+    content: '\f2ad ';
+
+}
+
+ul li:nth-child(8)::before{
+    content: '\f179';
+
+}
